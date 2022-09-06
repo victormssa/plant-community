@@ -2,6 +2,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Guia CSS
+1- Estilização do Main | Linhas 11 ~ 51
+2- Estilização do Nav | Linhas 53 ~ 105
+3- Responsividade 1440px | Linhas 107 ~ 115
+*/
+
 /* Estilização do Main */
 
 main {
@@ -22,8 +28,16 @@ a {
     margin: auto;
 }
 
+.card img {
+    margin-bottom: -20px;
+}
+
 .card__off {
     display: none;
+}
+
+.card h1 {
+    font-weight: 600;
 }
 
 .card p {
@@ -45,7 +59,7 @@ a {
 }
 
 .slide1, .slide2, .slide3 {
-    margin-right: 10px;
+    margin-right: 20px;
     cursor: pointer;
 }
 
@@ -88,4 +102,24 @@ a {
     font-weight: 500;
     font-size: 18px;
     color: #92E3A9;
+}
+
+/* Responsividade 1440px */
+
+@media screen and (min-width: 1440px) {
+    .card p {
+        line-height: 23.2px;
+        max-width: 299px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 18px;
+        margin: 0 0 20px 0;
+        height: auto;
+    }
+
+    .selected {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
 }
