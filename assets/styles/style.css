@@ -3,9 +3,10 @@
 }
 
 /* Guia CSS
-1- Estilização do Main | Linhas 11 ~ 51
-2- Estilização do Nav | Linhas 53 ~ 105
-3- Responsividade 1440px | Linhas 107 ~ 115
+1- Estilização do Main | Linhas 12 ~ 52
+2- Estilização do Nav | Linhas 54 ~ 106
+3- Responsividade w-1440px | Linhas 108 ~ 126
+4- Responsividade h-1180px | Linhas 128 ~ 173
 */
 
 /* Estilização do Main */
@@ -91,7 +92,7 @@ a {
 
 .button__skip {
     color: #92E3A9;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
     border-style: none;
     margin-top: 30px;
     cursor: pointer;
@@ -104,7 +105,7 @@ a {
     color: #92E3A9;
 }
 
-/* Responsividade 1440px */
+/* Responsividade width 1440px */
 
 @media screen and (min-width: 1440px) {
     .card p {
@@ -121,5 +122,52 @@ a {
         display: flex;
         justify-content: center;
         margin-bottom: 20px;
+    }
+}
+
+/* Responsividade height 1180px */
+
+@media screen and (min-height: 1180px) {
+    .cards img {
+        width: 600px;
+    }
+    img {
+        width: 200%;
+    }
+    .card h1 {
+        font-weight: 600;
+        font-size: 48px;
+    }
+    .card p {
+        line-height: 46.4px;
+        max-width: 600px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 36px;
+        margin: 0 0 40px 0;
+        height: auto;
+    }
+    .selected {
+        display: flex;
+        justify-content: center;
+        margin-top: -20px;
+    
+    }
+    .selected div {
+        margin-right: 40px;
+    }
+    .button__next {
+        width: 616px;
+        height: 130px;
+    }
+    .button__next p {
+        font-size: 36px;
+    }
+    .button__skip {
+        width: 616px;
+        margin-top: -20px;
+    }
+    .button__skip p{
+        font-size: 36px;
     }
 }
