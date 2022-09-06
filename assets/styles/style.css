@@ -1,0 +1,125 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Guia CSS
+1- Estilização do Main | Linhas 11 ~ 51
+2- Estilização do Nav | Linhas 53 ~ 105
+3- Responsividade 1440px | Linhas 107 ~ 115
+*/
+
+/* Estilização do Main */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.card img {
+    margin-bottom: -20px;
+}
+
+.card__off {
+    display: none;
+}
+
+.card h1 {
+    font-weight: 600;
+}
+
+.card p {
+    line-height: 23.2px;
+    max-width: 299px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0 0 40px 0;
+    height: auto;
+}
+
+/* Estilização do Nav */
+
+.selected {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.slide1, .slide2, .slide3 {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button__next {
+    border-style: none;
+    background: #92E3A9;
+    width: 308px;
+    box-shadow: 0px 4px 10px #A1C3FC;
+    cursor: pointer;
+}
+
+.button__next:hover {
+    background: #7bc08e;
+}
+
+.button__next p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.button__skip {
+    color: #92E3A9;
+    background-color: white;
+    border-style: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.button__skip p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #92E3A9;
+}
+
+/* Responsividade 1440px */
+
+@media screen and (min-width: 1440px) {
+    .card p {
+        line-height: 23.2px;
+        max-width: 299px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 18px;
+        margin: 0 0 20px 0;
+        height: auto;
+    }
+
+    .selected {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
